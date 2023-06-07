@@ -30,7 +30,7 @@
 #define KPD_u8COL3_PIN      DIO_u8PIN6
 #define KPD_u8COL4_PIN      DIO_u8PIN7
 
-#define KPD_u8BUTTON_ARR    {{7, 8, 9, +}, {4,5,6,-}, {1,2,3,*}, {.,0,=,/}}
+#define KPD_u8BUTTON_ARR    {{'7', '8', '9', '+'}, {'4','5','6','-'}, {'1','2','3','*'}, {'.','0','=','/'}}
 
 #define KPD_u8NO_PRESSED_KEY    0XFF
 #endif /* KPD_CFG_H_ */
