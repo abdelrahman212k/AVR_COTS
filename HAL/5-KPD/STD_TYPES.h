@@ -15,15 +15,6 @@
 /*                                           BOOLEAN VALUES	     	                                   */
 /*******************************************************************************************************/
 
-#ifndef		FALSE
-#define		FALSE   (0u)
-#endif
-
-#ifndef		TRUE
-#define		TRUE   (1u)
-#endif
-
-
 // Unsigned Variables
 typedef unsigned char			  	uint8  ;
 typedef unsigned short int			uint16 ;
@@ -40,9 +31,6 @@ typedef signed long long int		sint64 ;
 typedef float						f32	 ;
 typedef double						f64	 ;
 typedef long double                 f128 ;
-
-
-#define NULL  		((void*) 0)
 
 
 #endif /* STD_TYPES_H_ */

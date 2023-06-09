@@ -2,35 +2,31 @@
 /* Author            : Abdelrahman Kamal Eldean                                                        */
 /* Version           : V0.0.0                                                                          */
 /* Data              : 16 May 2023                                                                     */
-/* Description       : LSTD_TYPES.h                                                                    */
+/* Description       : LERROR_STATES.h                                                                 */
 /*******************************************************************************************************/
 
-
 /*******************************************************************************************************/
-/*                                              File guard		                                       */
+/*                                             File Guard		                                       */
 /*******************************************************************************************************/
-#ifndef STD_TYPES_H_
-#define STD_TYPES_H_
+#ifndef ERROR_STATES_H_
+#define ERROR_STATES_H_
 /*******************************************************************************************************/
-/*                                           BOOLEAN VALUES	     	                                   */
+/*                                        Enumerators for Errors	     	                           */
 /*******************************************************************************************************/
+typedef enum
+{
+	ES_NOK,
+	ES_OK,
+	ES_OUT_OF_RANGE,
+	ES_NULL_POINTER
+}ES_t;
 
-// Unsigned Variables
-typedef unsigned char			  	uint8  ;
-typedef unsigned short int			uint16 ;
-typedef unsigned long  int			uint32 ;
-typedef unsigned long long int		uint64 ;
-
-// Signed Variables
-typedef signed char			     	sint8  ;
-typedef signed short int			sint16 ;
-typedef signed long  int			sint32 ;
-typedef signed long long int		sint64 ;
-
-// Float Variables
-typedef float						f32	 ;
-typedef double						f64	 ;
-typedef long double                 f128 ;
+#define NOK           0U
+#define OK            1U
+#define NULL_PTR_ERR  2U
 
 
-#endif /* STD_TYPES_H_ */
+
+#endif /* ERROR_STATES_H_ */
+
+

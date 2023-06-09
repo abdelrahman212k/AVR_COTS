@@ -22,7 +22,7 @@
 uint8 KPD_u8GetPressedKey(void)
 {
     uint8 Local_u8PressedKey = KPD_u8NO_PRESSED_KEY;
-    uint8 Local_u8RowCounter, Local_u8ColCounter, Local_u8KeyState;
+    uint8 Local_u8KeyState, Local_u8RowCounter, Local_u8ColCounter;
     static uint8 Local_u8ColArr[KPD_u8COL_NUM] ={KPD_u8COL1_PIN, KPD_u8COL2_PIN, KPD_u8COL3_PIN, KPD_u8COL4_PIN};
     static uint8 Local_u8RowArr[KPD_u8ROW_NUM] ={KPD_u8ROW1_PIN, KPD_u8ROW2_PIN, KPD_u8ROW3_PIN, KPD_u8ROW4_PIN};
     static uint8 Local_u8KPDArr[KPD_u8ROW_NUM][KPD_u8COL_NUM] = KPD_u8BUTTON_ARR;

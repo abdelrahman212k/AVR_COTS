@@ -1,5 +1,6 @@
 #include "STD_TYPES.h"
 #include "BIT_MATH.h"
+#include "DEFINES.h"
 #include "ERROR_STATES.h"
 
 #include "DIO_reg.h"
@@ -235,7 +236,7 @@ uint8 DIO_u8InternalPullUp(uint8 Copy_u8Port, uint8 Copy_u8Pin, uint8 Copy_u8Pul
         }
         else
         {
-            uint8 Local_u8ErrorState = NOK; //Invalid value
+            Local_u8ErrorState = NOK; //Invalid value
         }
     }
     else

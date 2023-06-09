@@ -2,35 +2,27 @@
 /* Author            : Abdelrahman Kamal Eldean                                                        */
 /* Version           : V0.0.0                                                                          */
 /* Data              : 16 May 2023                                                                     */
-/* Description       : LSTD_TYPES.h                                                                    */
+/* Description       : LBIT_MATH.h                                                                     */
 /*******************************************************************************************************/
-
-
 /*******************************************************************************************************/
-/*                                              File guard		                                       */
+/*                                            File Guard		                                       */
 /*******************************************************************************************************/
-#ifndef STD_TYPES_H_
-#define STD_TYPES_H_
+#ifndef BIT_MATH_H_
+#define BIT_MATH_H_
 /*******************************************************************************************************/
-/*                                           BOOLEAN VALUES	     	                                   */
+/*                                        Function Like Macros	     	                               */
 /*******************************************************************************************************/
+#define SET_BIT(REG , BITNUM) ((REG) |= (1U<<(BITNUM)))
+#define CLR_BIT(REG , BITNUM) ((REG) &= ~(1U<<BITNUM))
+#define TOG_BIT(REG , BITNUM) ((REG) ^= (1U<<(BITNUM)))
+#define GET_BIT(REG , BITNUM) (((REG) >> (BITNUM)) & 1U)
 
-// Unsigned Variables
-typedef unsigned char			  	uint8  ;
-typedef unsigned short int			uint16 ;
-typedef unsigned long  int			uint32 ;
-typedef unsigned long long int		uint64 ;
+#define Set_BITS(REG,MSK)			((REG) |=  (MSK))
+#define Clr_BITS(REG,MSK)			((REG) &= ~(MSK))
+#define Toggle_BITS(REG,MSK)		((REG) ^=  (MSK))
 
-// Signed Variables
-typedef signed char			     	sint8  ;
-typedef signed short int			sint16 ;
-typedef signed long  int			sint32 ;
-typedef signed long long int		sint64 ;
+#define Set_ALL_BITS(REG)			((REG) =  (0xFFFFFFFF))
+#define Clr_ALL_BITS(REG)			((REG) =  (0x00000000))
+#define Toggle_ALL_BITS(REG)		((REG) ^= (0xFFFFFFFF))
 
-// Float Variables
-typedef float						f32	 ;
-typedef double						f64	 ;
-typedef long double                 f128 ;
-
-
-#endif /* STD_TYPES_H_ */
+#endif /* BIT_MATH_H_ */
