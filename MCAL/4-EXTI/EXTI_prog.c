@@ -153,7 +153,7 @@ uint8 EXTI_u8SetSenseControl(uint8 Copy_u8InterruptNum, uint8 Copy_u8Sense)
     return Local_u8ErrorState;
 }
 
-uint8 EXTI_u8InterruptEnable(uint8 Copy_u8InterruptNum)
+uint8 EXTI_u8EnableInterrupt(uint8 Copy_u8InterruptNum)
 {
     uint8 Local_u8ErrorState = OK;
     switch (Copy_u8InterruptNum)
@@ -166,7 +166,7 @@ uint8 EXTI_u8InterruptEnable(uint8 Copy_u8InterruptNum)
     return Local_u8ErrorState;
 }
 
-uint8 EXTI_u8InterruptDisable(uint8 Copy_u8InterruptNum)
+uint8 EXTI_u8DisableInterrupt(uint8 Copy_u8InterruptNum)
 {
     uint8 Local_u8ErrorState = OK;
     switch (Copy_u8InterruptNum)

@@ -49,8 +49,8 @@ Configure pins direction:
 //PORTD
 #define PORTD_PIN0_DIR      OUTPUT
 #define PORTD_PIN1_DIR      OUTPUT
-#define PORTD_PIN2_DIR      INPUT
-#define PORTD_PIN3_DIR      INPUT
+#define PORTD_PIN2_DIR      OUTPUT
+#define PORTD_PIN3_DIR      OUTPUT
 #define PORTD_PIN4_DIR      OUTPUT
 #define PORTD_PIN5_DIR      OUTPUT
 #define PORTD_PIN6_DIR      OUTPUT
@@ -97,8 +97,8 @@ Configure initial value of pins, Options for input pins:    1- FLOATING
 //PORTD
 #define PORTD_PIN0_INITIAL_VAL      LOW
 #define PORTD_PIN1_INITIAL_VAL      LOW
-#define PORTD_PIN2_INITIAL_VAL      PULL_UP
-#define PORTD_PIN3_INITIAL_VAL      PULL_UP
+#define PORTD_PIN2_INITIAL_VAL      LOW
+#define PORTD_PIN3_INITIAL_VAL      LOW
 #define PORTD_PIN4_INITIAL_VAL      LOW
 #define PORTD_PIN5_INITIAL_VAL      LOW
 #define PORTD_PIN6_INITIAL_VAL      LOW

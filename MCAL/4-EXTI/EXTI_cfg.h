@@ -2,6 +2,7 @@
  * @file EXTI_cfg.h
  * @author Abdelrahman Kamal (abdelrahman.k212@gmail.com)
  * @brief This file configures the EXTI module in pre-built configuration method
+ * @details PreBuilt Configuration for external interrupts
  * @version 0.1
  * @date 2023-06-08
  */
