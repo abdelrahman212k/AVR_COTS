@@ -19,4 +19,12 @@
 #define DISABLED    2U
 #endif
 
+#ifndef	BUSY
+#define BUSY		1U
+#endif
+
+#ifndef	IDLE
+#define IDLE		0U
+#endif
+
 #endif /* DEFINES_H_ */
