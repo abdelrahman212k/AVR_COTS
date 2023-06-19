@@ -1,5 +1,5 @@
 /**
- *@file ADC_prv.h
+ * @file ADC_prv.h
  * @author Abdelrahman Kamal (abdelrahman.k212@gmail.com)
  * @brief private macros definitions for ADC peripheral
  * @version 0.1

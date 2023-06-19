@@ -61,7 +61,23 @@ typedef enum
     ADC_SINGLE_ENDED_GND
 }ADC_CHANNEL_t;
 
+typedef struct
+{
+    uint8 ChainSize;
+    ADC_CHANNEL_t* ChannelArray;
+
+#if ADC_u8RESOLUTION == EIGHT_BITS
+    uint8* ResultArray;
+#elif ADC_u8RESOLUTION == TEN_BITS
+    uint16* ResultArray;
+#endif
+
+    void (*ADC_pvfNotificationFunc)(void);
+}ADC_CHAIN_t;
+
 void ADC_vInit(void);
-uint16 ADC_u16GetChannelReading(ADC_CHANNEL_t Copy_u8Channel);
+uint8 ADC_u8StartConversionSync(ADC_CHANNEL_t Copy_u8Channel, uint16* Copy_pu16Result);
+uint8 ADC_u8StartConversionAsync(ADC_CHANNEL_t Copy_u8Channel, uint16* Copy_pu16Result, void(*Copy_pvfNotificationFunc)(void));
+uint8 ADC_u8StartChainConversionAsync(ADC_CHAIN_t* Copy_strChain);
 
 #endif /* ADC_INTERFACE_H_ */
