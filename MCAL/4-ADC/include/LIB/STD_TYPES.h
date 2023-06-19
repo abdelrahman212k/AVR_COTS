@@ -2,7 +2,7 @@
 /* Author            : Abdelrahman Kamal Eldean                                                        */
 /* Version           : V0.0.0                                                                          */
 /* Data              : 16 May 2023                                                                     */
-/* Description       : LSTD_TYPES.h                                                                    */
+/* Description       : STD_TYPES.h                                                                    */
 /*******************************************************************************************************/
 
 

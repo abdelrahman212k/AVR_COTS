@@ -64,5 +64,9 @@
  */
 #define ADC_u8PRESCALER_VALUE       DIVISION_BY_128
 
+/**
+ * @brief configure the value of time out when using ADC_u8StartConversionSynch
+ */
+#define ADC_u32TIMEOUT_VALUE		50000U
 
 #endif /* ADC_CFG_H_ */
